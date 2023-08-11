@@ -1,0 +1,17 @@
+/* Add styles to create shadow effect */
+.chart-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .chart-container::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Adjust the shadow distance */
+    height: 10px; /* Adjust the shadow height */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2));
+    pointer-events: none;
+  }
+  
